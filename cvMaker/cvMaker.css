@@ -1,0 +1,207 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.webHeadings{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.webHeadings > h1{
+    color: brown;
+}
+
+.imgInput{
+    margin: 20px;
+    height: 100px;
+    width: 50%;
+    border: solid;
+    padding: 10px;
+    /* text-align: center; */
+    font-weight: 600;
+}
+#imgFile{
+    margin-top: 50px;
+}
+
+.infoHeading{
+    font-size: medium;
+}
+
+#cvInput{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+
+#personalInfo, #professionalInfo{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    border: solid chocolate;
+    padding: 10px;
+    width: 45vw;
+}
+
+input{
+    width: 40vw;
+    padding: 5px;
+    margin: 10px;
+}
+
+label , #professionalInfo > p{
+    font-weight: 600;
+}
+
+#personalInfo > p, #professionalInfo > p{
+    font-size: 20px;
+}
+
+#certificationsBox > textarea, #personalInfo > textarea, #workExperienceBox > textarea ,#educationBox > textarea , #releventSkillsBox > textarea{
+    width: 92%;
+}
+
+.addMoreButton{
+    width: 15%;
+    align-self: center;
+    height: auto;
+    background-color: rgb(10, 112, 255);
+    padding: 10px 5px;
+    border: none;
+    color: white;
+
+}
+
+
+#generateCv{
+    margin-left: auto;
+    padding: 20px;
+    margin: 30px;
+    margin-top: 80px;
+    background-color: crimson;
+    color: white;
+    font-size: 20px;
+}
+
+#generateCv:hover{
+    border: none;
+    padding: 21px;
+    cursor: pointer;
+    box-shadow: 4px 4px 1px black;
+}
+
+/* -------------------- */
+
+.generatedCv{
+    word-wrap: break-word;
+    width: 50%;
+    height: auto;
+    border: 2px black solid;
+    margin: 80px;
+    display: grid;
+    display: none;
+    grid-template-columns: 35% 65%;
+    
+}
+
+.left{
+    background-color: rgb(48, 148, 255);
+    /* border: solid 1px black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    /* padding: 10px; */
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#cvProfilePic{
+    width: 150px;
+    height: 150px;
+    /* border: solid; */
+    margin: 15px 0px 0px 0px;
+    border-radius: 50%;
+    /* background-image: url(/musicplayer/123.jpeg); */
+}
+
+.right{
+    text-align: left;
+    background-color: rgb(255, 252, 244);
+    /* border: solid 1px black; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    /* padding-top: 10px; */
+}
+
+.rightHeading{
+    background-color: rgba(157, 208, 255, 0.922);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    font-weight: 400;
+    border-bottom-left-radius: 20px;
+    margin-top: 30px;
+}
+
+.cvlinks{
+    margin: 5px 0px;
+}
+
+#cvName{
+    font-size: x-large;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+#cvJobTitle{
+    font-size:20px;
+    font-weight: 400;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+#cvEmail , #cvAddress , .contacts{
+    margin: 3px;
+    text-align: center;
+}
+
+#cvAddress{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#releventSkillsHeading{
+    margin-top: 20px;
+}
+
+#skills{
+    text-align: left;
+}
+
+.title{
+    margin-left: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    /* background-color: aquamarine; */
+}
+.desc{
+    margin-top: 0px;
+    margin-left: 25px;
+
+}
+
+
+

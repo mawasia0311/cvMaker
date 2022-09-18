@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Maker</title>
+    <link rel="stylesheet" href="cvMaker.css">
+</head>
+<body>
+    
+    <div class="webHeadings">
+        <h1>CREATE A PROFESSIONAL CV</h1>
+        <h3>Fill in the blanks and download your CV in minutes.</h3>
+    </div>
+
+    <div class="imgInput" id="imgInput">
+        Add your profile photo here:
+        <input type="file" id="imgFile" accept="image\*">
+    </div>
+
+    <div class="cvInput" id="cvInput">
+        
+        <div id="personalInfo">
+
+            <p class="infoHeading">Personal Information</p>
+
+            <label for="title">Job Title</label>
+            <input type="text" id="title" required>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required>
+
+            <label for="phoneNo">Phone Number</label>
+            <input type="text" id="phoneNo" placeholder="seperate numbers with ' , ' for multiple phone numbers" required>
+            
+            <label for="email">Emain Id</label>
+            <input type="text" id="email" required>
+            
+            <label for="address">Address</label>
+            <textarea name="address" id="address" cols="20" rows="3"></textarea>
+
+            <p>Important Links:</p>
+            
+            <label for="facebook">Facebook</label>
+            <input type="text" id="facebook">
+            
+            <label for="linkedin">LinkedIn</label>
+            <input type="text" id="linkedIn">
+
+            <label for="gitHub">GitHub</label>
+            <input type="text" id="gitHub">
+            
+            <label for="website">Personal Website</label>
+            <input type="text" id="website">
+        </div>
+
+        <div id="professionalInfo">
+
+            <p class="infoHeading">Professional Information</p>
+
+            <p>Work Experience</p>
+            <div id="workExperienceBox">
+                <textarea name="singleExp" class = 'workExperiences' id="workExperience" cols="0" rows="4" placeholder="2020 - 2022 - job Title - Discription"></textarea>
+            </div>
+            <button class="addMoreButton" id="addWorkExp" onclick="addWorkExp()">ADD MORE</button>
+
+            <p>Education</p>
+            <div id="educationBox">
+                <textarea name="singleExp" class="qualification" id="education" cols="0" rows="4" placeholder="2020 - 2022 Discription"></textarea>
+            </div>
+            <button class="addMoreButton" id="addEducation" onclick="addEducation()">ADD MORE</button>
+
+            <p>Relevent Skills</p>
+            <div id="releventSkillsBox">
+                <textarea name="singleExp" class="releventSkills" id="releventSkills" cols="0" rows="1" placeholder=""></textarea>
+            </div>
+            <button class="addMoreButton" id="addReleventSkills" onclick="addReleventSkills()">ADD MORE</button>
+
+            <p>Certifications</p>
+            <div id="certificationsBox">
+                <textarea name="singleExp" class = 'certifications' id="Certification" cols="0" rows="4" placeholder="certification - institute"></textarea>
+            </div>
+            <button class="addMoreButton" id="addCertifications" onclick="addCertifications()">ADD MORE</button>
+
+
+        </div>
+
+    </div>
+
+    <!-- ------------------------------------- -->
+
+    <button id="generateCv" onclick="generateCv()">GENERATE CV</button>
+
+    <!-- ------------------------------------- -->
+    
+    <div class="generatedCv" id="generatedCv">
+
+        <div class="left" id="left">
+
+            <img src="123.jpeg" alt="" class="profilePic" id="cvProfilePic">
+            
+
+        </div>
+
+        <div class="right" id="right">
+            <div id="cvWorkExperience">
+
+                <h3 class="rightHeading">Work Experience</h3>
+
+
+            </div>
+
+            <div id="cvEducation">
+
+                <h3 class="rightHeading"> Education </h3>
+
+            </div>
+
+            <div id="cvCertification">
+
+                <h3 class="rightHeading">Certification</h3>
+
+            </div>
+        </div>
+
+    </div>
+        
+
+    
+
+
+    <script src="cvMaker.js"></script>
+</body>
+</html>
